@@ -13,3 +13,4 @@ RUN ./gradlew install
 RUN cd ../java
 RUN chmod +x gradlew
 RUN ./gradlew install
+RUN ./gradlew test
