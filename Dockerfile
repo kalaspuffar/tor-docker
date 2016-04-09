@@ -8,6 +8,6 @@ RUN git clone https://github.com/thaliproject/Tor_Onion_Proxy_Library.git torpro
 
 RUN ls torproxy
 
-RUN "cd torproxy/universal & chmod +x gradlew & ./gradlew install"
+RUN cd torproxy/universal && chmod +x gradlew && ./gradlew install
 
-RUN "cd torproxy/java & chmod +x gradlew & ./gradlew install & ./gradlew test"
+RUN cd torproxy/java && chmod +x gradlew && ./gradlew install && ./gradlew test
