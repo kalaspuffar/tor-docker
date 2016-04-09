@@ -3,7 +3,7 @@ FROM ubuntu
 MAINTAINER mailto.woden@gmail.com
 
 RUN apt-get update
-RUN apt-get install default-jdk git maven
+RUN apt-get install --assume-yes default-jdk git maven
 RUN git clone https://github.com/thaliproject/Tor_Onion_Proxy_Library.git torproxy
 
 RUN cd torproxy/universal
