@@ -1,6 +1,6 @@
 FROM ubuntu
 
-MAINTAINER mailto.woden@gmail.com
+MAINTAINER Daniel Persson (mailto.woden@gmail.com)
 
 RUN apt-get update
 RUN apt-get install --assume-yes default-jdk git maven
