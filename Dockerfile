@@ -15,4 +15,7 @@ RUN cd torproxy/java && chmod +x gradlew && ./gradlew install && ./gradlew test
 RUN mkdir server
 ADD pom.xml server/pom.xml
 ADD src server/src
-CMD cd server && mvn package
+
+WORKDIR /server
+VOLUME ["/server"]
+CMD mvn package
