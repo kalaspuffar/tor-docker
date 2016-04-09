@@ -11,3 +11,8 @@ RUN ls torproxy
 RUN cd torproxy/universal && chmod +x gradlew && ./gradlew install
 
 RUN cd torproxy/java && chmod +x gradlew && ./gradlew install && ./gradlew test
+
+RUN mkdir server
+ADD pom.xml server/pom.xml
+ADD src server/src
+CMD cd server && mvn package
