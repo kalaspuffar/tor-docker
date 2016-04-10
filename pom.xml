@@ -6,6 +6,14 @@
 	 <artifactId>server</artifactId> 
 	 <version>0.0.1</version>
 
+  <dependencies>
+	   <dependency>
+   	 	 <groupId>com.msopentech.thali</groupId> 
+   	 	 <artifactId>ThaliOnionProxyJava</artifactId> 
+   	 	 <version>0.0.2</version>
+  	 	</dependency>
+	 </dependencies>
+
   <build>
   	  <plugins>
 		     <plugin>
