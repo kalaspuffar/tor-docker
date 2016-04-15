@@ -27,23 +27,12 @@ public class TestProxy {
         }
 
         // Start a hidden service listener
-        int hiddenServicePort = 8080;
+        int hiddenServicePort = 9797;
         int localPort = 80;
         String onionAddress = onionProxyManager.publishHiddenService(hiddenServicePort, localPort);
 
         System.out.println(onionAddress);
         
-        /*
-        Socket clientSocket =
-                Utilities.socks4aSocketConnection(onionAddress, hiddenServicePort, "127.0.0.1", localPort);
-
-        
-        
-        BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-
-        String line;
-        while((line = in.readLine()) != null) System.out.println(line);
-        */
         
         Thread.sleep(5 * 60 * 1000);
     }
