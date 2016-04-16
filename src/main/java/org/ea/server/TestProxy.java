@@ -13,7 +13,7 @@ import com.msopentech.thali.java.toronionproxy.JavaOnionProxyContext;
 
 public class TestProxy {
     public static void main(String argv[]) throws Exception {
-        String fileStorageLocation = "torfiles";
+        String fileStorageLocation = "/server/torfiles";
         OnionProxyManager onionProxyManager = new JavaOnionProxyManager(
                 new JavaOnionProxyContext(
                         Files.createTempDirectory(fileStorageLocation).toFile()));
