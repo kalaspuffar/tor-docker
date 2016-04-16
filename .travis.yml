@@ -1,8 +1,8 @@
-# language: java
-sudo: required
-services: 
-  - docker
+language: java
+# sudo: required
+# services: 
+#   - docker
 
-before_install:
-  - docker build -t kalaspuffar/tor-docker .
-  - docker run -iP kalaspuffar/tor-docker
+# before_install:
+#   - docker build -t kalaspuffar/tor-docker .
+#   - docker run -iP kalaspuffar/tor-docker
