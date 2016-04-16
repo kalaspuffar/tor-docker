@@ -34,6 +34,6 @@ public class TestProxy {
         System.out.println(onionAddress);
         
         
-        Thread.sleep(5 * 60 * 1000);
+        Thread.sleep(30 * 60 * 1000);
     }
 }
