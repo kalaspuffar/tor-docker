@@ -24,5 +24,6 @@ WORKDIR /server
 VOLUME ["/server"]
 CMD mvn package
 EXPOSE 9797 9797
-CMD java -jar target/server-0.0.1-jar-with-dependencies.jar
+CMD ls target/
+CMD java -jar target/server-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 CMD exit
