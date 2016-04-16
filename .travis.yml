@@ -5,3 +5,4 @@ services:
 
 before_install:
   - docker build -t kalaspuffar/tor-docker .
+  - docker run -iP kalaspuffar/tor-docker
