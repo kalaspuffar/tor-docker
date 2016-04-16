@@ -13,7 +13,6 @@ RUN ./gradlew install
 WORKDIR /torproxy/java
 RUN chmod +x gradlew
 RUN ./gradlew install
-RUN ./gradlew test
 
 ADD index.html /var/www/index.html
 RUN /etc/init.d/openbsd-inetd start
