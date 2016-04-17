@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class SimpleTest { 
   @Test 
-  public void isTrue() { 
+  public void isTrue() throws Exception { 
     assertTrue("Must be true", true);
     IrcSender.send();
   } 
