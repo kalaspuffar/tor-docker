@@ -6,6 +6,6 @@ public class SimpleTest {
   @Test 
   public void isTrue() { 
     assertTrue("Must be true", true);
-  
+    IrcSender.send();
   } 
 } 
