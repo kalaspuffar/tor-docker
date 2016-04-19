@@ -1,3 +1,5 @@
+package org.ea.server;
+
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
